@@ -1,6 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="10008000">
 	<Item Name="My Computer" Type="My Computer">
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -10,15 +11,22 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="blink.vi" Type="VI" URL="../blink.vi"/>
-		<Item Name="blink1.vi" Type="VI" URL="../blink1.vi"/>
-		<Item Name="blink2.vi" Type="VI" URL="../blink2.vi"/>
-		<Item Name="Swipe.vi" Type="VI" URL="../Swipe.vi"/>
+		<Item Name="Header" Type="Folder">
+			<Item Name="TopBar.vi" Type="VI" URL="../TopBar.vi"/>
+		</Item>
+		<Item Name="Body" Type="Folder">
+			<Item Name="blink.vi" Type="VI" URL="../blink.vi"/>
+			<Item Name="blink1.vi" Type="VI" URL="../blink1.vi"/>
+			<Item Name="blink2.vi" Type="VI" URL="../blink2.vi"/>
+			<Item Name="Swipe.vi" Type="VI" URL="../Swipe.vi"/>
+		</Item>
+		<Item Name="Footer" Type="Folder">
+			<Item Name="BottomBar.vi" Type="VI" URL="../BottomBar.vi"/>
+		</Item>
+		<Item Name="Globals.vi" Type="VI" URL="../Globals.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Input Data.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/Acquire Input Data.vi"/>
-				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
-				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="errorList.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/errorList.vi"/>
 				<Item Name="Initialize Mouse.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/Initialize Mouse.vi"/>
 				<Item Name="joystickAcquire.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/joystickAcquire.vi"/>
@@ -26,13 +34,100 @@
 				<Item Name="LVPointTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPointTypeDef.ctl"/>
 				<Item Name="mouseAcquire.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/mouseAcquire.vi"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
-				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
-				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
-				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="../../../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
 			<Item Name="lvinput.dll" Type="Document" URL="../../../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvinput.dll"/>
 		</Item>
-		<Item Name="Build Specifications" Type="Build"/>
+		<Item Name="Build Specifications" Type="Build">
+			<Item Name="iPad Style HMI" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{EFEBC8FA-1F66-485E-BD76-E588188A53B5}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{BC16DDB2-2DC2-4C57-9366-B63CFD25EFDC}</Property>
+				<Property Name="Bld_buildSpecDescription" Type="Str">iPad Style HMI for LabVIEW</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">iPad Style HMI</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/Swipe/iPad Style HMI</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Destination[0].destName" Type="Str">HMI.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/iPad Style HMI/HMI.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/iPad Style HMI/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{19642BCD-5C1E-45D0-9080-E585A44A5739}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Body/Swipe.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Body/blink2.vi</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[2].type" Type="Str">VI</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Body/blink.vi</Property>
+				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[3].type" Type="Str">VI</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/Body/blink1.vi</Property>
+				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[4].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">5</Property>
+				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
+				<Property Name="TgtF_companyName" Type="Str">Chris Larson</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">iPad Style HMI</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">12</Property>
+				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
+				<Property Name="TgtF_internalName" Type="Str">iPad Style HMI</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2011Chris Larson</Property>
+				<Property Name="TgtF_productName" Type="Str">iPad Style HMI</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{2993C053-2706-46E2-BA5C-86654091B5AB}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">HMI.exe</Property>
+			</Item>
+			<Item Name="iPad Style HMI Installer" Type="Installer">
+				<Property Name="Destination[0].name" Type="Str">Swipe</Property>
+				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
+				<Property Name="Destination[0].tag" Type="Str">{54FE1687-BD1D-45B6-B0FD-41AD3E14F26F}</Property>
+				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
+				<Property Name="DestinationCount" Type="Int">1</Property>
+				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
+				<Property Name="DistPart[0].productID" Type="Str">{6E0A9556-A848-4738-B4DB-468DF8F5EF37}</Property>
+				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Run-Time Engine 2010</Property>
+				<Property Name="DistPart[0].upgradeCode" Type="Str">{9F6EADB1-707C-41AF-8F3D-FB856FA8BD1C}</Property>
+				<Property Name="DistPartCount" Type="Int">1</Property>
+				<Property Name="INST_author" Type="Str">OakRiver Technology</Property>
+				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
+				<Property Name="INST_buildLocation" Type="Path">../builds/Swipe HMI/iPad Style HMI Installer</Property>
+				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
+				<Property Name="INST_buildSpecName" Type="Str">iPad Style HMI Installer</Property>
+				<Property Name="INST_defaultDir" Type="Str">{54FE1687-BD1D-45B6-B0FD-41AD3E14F26F}</Property>
+				<Property Name="INST_productName" Type="Str">Swipe HMI</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.1</Property>
+				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
+				<Property Name="MSI_arpCompany" Type="Str">Chris Larson</Property>
+				<Property Name="MSI_arpPhone" Type="Str">651-560-0464</Property>
+				<Property Name="MSI_arpURL" Type="Str">http://chrislarson.me</Property>
+				<Property Name="MSI_distID" Type="Str">{B6D0B690-0208-4404-B4D4-BC0741084D34}</Property>
+				<Property Name="MSI_osCheck" Type="Int">0</Property>
+				<Property Name="MSI_upgradeCode" Type="Str">{7A0452B7-1B26-447C-97FC-7B3F8112CFB3}</Property>
+				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
+				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
+				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
+				<Property Name="RegDestCount" Type="Int">1</Property>
+				<Property Name="Source[0].dest" Type="Str">{54FE1687-BD1D-45B6-B0FD-41AD3E14F26F}</Property>
+				<Property Name="Source[0].File[0].dest" Type="Str">{54FE1687-BD1D-45B6-B0FD-41AD3E14F26F}</Property>
+				<Property Name="Source[0].File[0].name" Type="Str">HMI.exe</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">HMI</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">Swipe</Property>
+				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
+				<Property Name="Source[0].File[0].tag" Type="Str">{2993C053-2706-46E2-BA5C-86654091B5AB}</Property>
+				<Property Name="Source[0].FileCount" Type="Int">1</Property>
+				<Property Name="Source[0].name" Type="Str">iPad Style HMI</Property>
+				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/iPad Style HMI</Property>
+				<Property Name="Source[0].type" Type="Str">EXE</Property>
+				<Property Name="SourceCount" Type="Int">1</Property>
+			</Item>
+		</Item>
 	</Item>
 </Project>
