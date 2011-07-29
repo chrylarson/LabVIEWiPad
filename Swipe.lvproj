@@ -1,5 +1,39 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="10008000">
+	<Property Name="CCSymbols" Type="Str"></Property>
+	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
+	<Property Name="NI.Project.Description" Type="Str">HMI for touch panel with iPad style swiping to navigate between front panels.</Property>
+	<Property Name="ThirdParty.LV.ExampleFinder" Type="Str">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;nidna:ExampleProgram 
+    xmlns:nidna="http://www.ni.com/Schemas/DNA/1.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.ni.com/Schemas/DNA/1.0 ..\DNA\1.0\NiExampleProgram.xsd" 
+    SchemaVersion="1.0" 
+    ContentType="EXAMPLE" 
+&lt;Title&gt;
+	&lt;Text Locale="US"&gt;Swipe.lvproj&lt;/Text&gt;
+&lt;/Title&gt;
+&lt;Description&gt;
+	&lt;Text Locale="US"&gt;HMI for touch panel with iPad style swiping to navigate between front panels.&lt;/Text&gt;
+&lt;/Description&gt;
+&lt;Keywords&gt;
+	&lt;Item&gt;HMI&lt;/Item&gt;
+	&lt;Item&gt;UI&lt;/Item&gt;
+	&lt;Item&gt;Touch&lt;/Item&gt;
+&lt;/Keywords&gt;
+&lt;Navigation&gt;
+	&lt;Item&gt;3074&lt;/Item&gt;
+&lt;/Navigation&gt;
+&lt;FileType&gt;LV Project&lt;/FileType&gt;
+&lt;Metadata&gt;
+&lt;Item Name="RTSupport"&gt;&lt;/Item&gt;
+&lt;/Metadata&gt;
+&lt;ProgrammingLanguages&gt;
+&lt;Item&gt;LabVIEW&lt;/Item&gt;
+&lt;/ProgrammingLanguages&gt;
+&lt;RequiredSoftware&gt;
+&lt;NiSoftware MinVersion="10.0"&gt;LabVIEW&lt;/NiSoftware&gt; 
+&lt;/RequiredSoftware&gt;</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -24,6 +58,7 @@
 			<Item Name="BottomBar.vi" Type="VI" URL="../BottomBar.vi"/>
 		</Item>
 		<Item Name="Globals.vi" Type="VI" URL="../Globals.vi"/>
+		<Item Name="Button Label.ctl" Type="VI" URL="../Button Label.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Input Data.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/Acquire Input Data.vi"/>
@@ -34,6 +69,7 @@
 				<Item Name="LVPointTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPointTypeDef.ctl"/>
 				<Item Name="mouseAcquire.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/mouseAcquire.vi"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
+				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="../../../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
 			<Item Name="lvinput.dll" Type="Document" URL="../../../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvinput.dll"/>
@@ -57,7 +93,7 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/iPad Style HMI/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{19642BCD-5C1E-45D0-9080-E585A44A5739}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{56408A8D-EB48-4C82-B858-3C2A820BD61E}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Body/Swipe.vi</Property>
@@ -76,7 +112,7 @@
 				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">Chris Larson</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">iPad Style HMI</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">12</Property>
+				<Property Name="TgtF_fileVersion.build" Type="Int">13</Property>
 				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">iPad Style HMI</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2011Chris Larson</Property>
