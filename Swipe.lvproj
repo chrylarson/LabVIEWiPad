@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="10008000">
+<Project Type="Project" LVVersion="13008000">
 	<Property Name="CCSymbols" Type="Str"></Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.Project.Description" Type="Str">HMI for touch panel with iPad style swiping to navigate between front panels.</Property>
@@ -70,22 +70,30 @@
 				<Item Name="mouseAcquire.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/mouseAcquire.vi"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
+				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
+				<Item Name="ErrorDescriptions.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/ErrorDescriptions.vi"/>
 			</Item>
-			<Item Name="lvanlys.dll" Type="Document" URL="../../../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvanlys.dll"/>
-			<Item Name="lvinput.dll" Type="Document" URL="../../../../../../../Program Files/National Instruments/LabVIEW 2010/resource/lvinput.dll"/>
+			<Item Name="lvinput.dll" Type="Document" URL="/&lt;resource&gt;/lvinput.dll"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="iPad Style HMI" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{EFEBC8FA-1F66-485E-BD76-E588188A53B5}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{BC16DDB2-2DC2-4C57-9366-B63CFD25EFDC}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{FBC9B817-5BCD-49C5-AACC-52533E9413A7}</Property>
 				<Property Name="Bld_buildSpecDescription" Type="Str">iPad Style HMI for LabVIEW</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">iPad Style HMI</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/Swipe/iPad Style HMI</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/iPad Style HMI</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{AEC5F034-F176-4EF4-9E38-CB1F7F19C941}</Property>
+				<Property Name="Bld_version.build" Type="Int">13</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">HMI.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/iPad Style HMI/HMI.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
@@ -109,11 +117,8 @@
 				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[4].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">5</Property>
-				<Property Name="TgtF_autoIncrement" Type="Bool">true</Property>
 				<Property Name="TgtF_companyName" Type="Str">Chris Larson</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">iPad Style HMI</Property>
-				<Property Name="TgtF_fileVersion.build" Type="Int">13</Property>
-				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">iPad Style HMI</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2011Chris Larson</Property>
 				<Property Name="TgtF_productName" Type="Str">iPad Style HMI</Property>
@@ -127,9 +132,9 @@
 				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
 				<Property Name="DestinationCount" Type="Int">1</Property>
 				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[0].productID" Type="Str">{6E0A9556-A848-4738-B4DB-468DF8F5EF37}</Property>
-				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Run-Time Engine 2010</Property>
-				<Property Name="DistPart[0].upgradeCode" Type="Str">{9F6EADB1-707C-41AF-8F3D-FB856FA8BD1C}</Property>
+				<Property Name="DistPart[0].productID" Type="Str">{CD4CAB41-CAB7-436F-8D66-A83B95F2F3E6}</Property>
+				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Run-Time Engine 2013 f2</Property>
+				<Property Name="DistPart[0].upgradeCode" Type="Str">{A661D981-0A3B-4081-A5B5-1FAA03CFAF84}</Property>
 				<Property Name="DistPartCount" Type="Int">1</Property>
 				<Property Name="INST_author" Type="Str">OakRiver Technology</Property>
 				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
@@ -140,6 +145,7 @@
 				<Property Name="INST_productName" Type="Str">Swipe HMI</Property>
 				<Property Name="INST_productVersion" Type="Str">1.0.1</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
+				<Property Name="InstSpecVersion" Type="Str">13008051</Property>
 				<Property Name="MSI_arpCompany" Type="Str">Chris Larson</Property>
 				<Property Name="MSI_arpPhone" Type="Str">651-560-0464</Property>
 				<Property Name="MSI_arpURL" Type="Str">http://chrislarson.me</Property>
