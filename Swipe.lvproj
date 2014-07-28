@@ -49,10 +49,11 @@
 			<Item Name="TopBar.vi" Type="VI" URL="../TopBar.vi"/>
 		</Item>
 		<Item Name="Body" Type="Folder">
-			<Item Name="blink.vi" Type="VI" URL="../blink.vi"/>
-			<Item Name="blink1.vi" Type="VI" URL="../blink1.vi"/>
-			<Item Name="blink2.vi" Type="VI" URL="../blink2.vi"/>
+			<Item Name="page1.vi" Type="VI" URL="../page1.vi"/>
+			<Item Name="page2.vi" Type="VI" URL="../page2.vi"/>
+			<Item Name="page3.vi" Type="VI" URL="../page3.vi"/>
 			<Item Name="Swipe.vi" Type="VI" URL="../Swipe.vi"/>
+			<Item Name="app1.vi" Type="VI" URL="../app1.vi"/>
 		</Item>
 		<Item Name="Footer" Type="Folder">
 			<Item Name="BottomBar.vi" Type="VI" URL="../BottomBar.vi"/>
@@ -107,13 +108,13 @@
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Body/Swipe.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Body/blink2.vi</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Body/page3.vi</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].type" Type="Str">VI</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Body/blink.vi</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Body/page1.vi</Property>
 				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[3].type" Type="Str">VI</Property>
-				<Property Name="Source[4].itemID" Type="Ref">/My Computer/Body/blink1.vi</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/Body/page2.vi</Property>
 				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[4].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">5</Property>
