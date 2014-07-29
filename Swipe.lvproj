@@ -59,9 +59,14 @@
 		<Item Name="Apps" Type="Folder">
 			<Item Name="app1.vi" Type="VI" URL="../app1.vi"/>
 		</Item>
+		<Item Name="Controls" Type="Folder">
+			<Item Name="Button Label.ctl" Type="VI" URL="../Button Label.ctl"/>
+			<Item Name="App Buttons.ctl" Type="VI" URL="../App Buttons.ctl"/>
+		</Item>
 		<Item Name="Swipe.vi" Type="VI" URL="../Swipe.vi"/>
 		<Item Name="Globals.vi" Type="VI" URL="../Globals.vi"/>
-		<Item Name="Button Label.ctl" Type="VI" URL="../Button Label.ctl"/>
+		<Item Name="Stop.ctl" Type="VI" URL="../Stop.ctl"/>
+		<Item Name="nav-button.ctl" Type="VI" URL="../nav-button.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Input Data.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/Acquire Input Data.vi"/>
